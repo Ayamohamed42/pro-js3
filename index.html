@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مكِّـــيون</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="Css/Style.Css">
+  <script src="https://cdn.tailwindcss.com"></script>
+     </head>
+<body>
+<header>
+  <div class="parent_header">
+    <!-- زر الهامبرغر يظهر في الجوال فقط -->
+    <button class="toggle-menu" onclick="document.querySelector('.parent_header .list').classList.toggle('show')">
+      &#9776;
+    </button>
+
+    <div class="logo">
+      <img src="./img/logo-removebg-preview.png" alt="لوجو مكيون">
+      <h1>مكِّـــيون</h1>
+    </div>
+
+    <ul class="list">
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#about">عنَّــا</a></li>
+      <li><a href="#trips">الرحلات</a></li>
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#contact">دعم</a></li>
+      <li>
+        <a href="#" class="contact-btn" id="contactBtn">تواصل معنا</a>
+        <div class="contact-social-icons" id="contactSocialIcons">
+          <a href="https://www.facebook.com/share/16GBguQJvX/" class="contact-social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/01108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم" class="contact-social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://t.me/makkiyoon25" class="contact-social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" class="contact-social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="contact-social-icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
+    <!-- ============================heroooo================= -->
+       <section class="hero">
+        <div class="hero-content">
+            <h2>مكِّـــيون</h2>
+            <div class="booking-container">
+                <button class="booking-btn" id="bookingBtn">احجز الآن</button>
+                <div class="social-icons" id="socialIcons">
+                    <a href="https://www.facebook.com/share/16GBguQJvX/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://t.me/makkiyoon25" target="_blank"  class="social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ==================================== -->
+  <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-title">قصتنا</h2>
+                <p class="about-text">
+                    "مكِّـــيون" ليست مجرد شركة سفر، بل هي قصة شغف بدأت برحلة واحدة عام 2010، وتحولت إلى حلم يربط بين الثقافات والقلوب عبر الحدود. نؤمن بأن كل رحلة يجب أن تكون تجربة استثنائية تترك أثراً لا ينسى.
+                </p>
+                
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">رحلة ناجحة</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">وجهة حول العالم</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">مسافر سعيد</div>
+                    </div>
+                </div>
+                
+                <p class="about-text">
+                    نفتخر بفريق من خبراء السفر الذين يعملون باجتهاد لتحويل أحلام سفرك إلى واقع. جودة خدماتنا وشغفنا بتفاصيل رحلتك هو ما يميزنا عن الآخرين.
+                </p>
+            </div>
+            
+            <div class="about-video">
+                <video autoplay muted loop>
+                    <source src="./img/3723436-uhd_4096_2160_24fps.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================================================ -->
+     
+     <!-- ==================== -->
+<section id="airlines" class="bg-gray-100 py-12 text-center">
+  <h2 class="text-3xl font-bold text-yellow-600 mb-2">أفضل شركات الطيران</h2>
+  <div class="w-24 h-1 bg-yellow-600 mx-auto mb-8 rounded-full"></div>
+
+  <div class="overflow-hidden relative">
+    <div id="carouselTrack" class="flex gap-6 animate-scroll whitespace-nowrap">
+      
+      <div class="flex-shrink-0 w-44 bg-white rounded-2xl shadow p-4 transition-transform duration-300 hover:scale-105">
+        <img src="./img/logo egypt.jpg" alt="طيران العربية" class="w-full h-24 object-contain mx-auto">
+        <p class="mt-2 font-semibold text-gray-700 text-sm">طيران العربية</p>
+      </div>
+
+      <div class="flex-shrink-0 w-44 bg-white rounded-2xl shadow p-4 transition-transform duration-300 hover:scale-105">
+        <img src="./img/turkish logo.jpg" alt="الخطوط التركية" class="w-full h-24 object-contain mx-auto">
+        <p class="mt-2 font-semibold text-gray-700 text-sm">الخطوط التركية</p>
+      </div>
+
+      <div class="flex-shrink-0 w-44 bg-white rounded-2xl shadow p-4 transition-transform duration-300 hover:scale-105">
+        <img src="./img/dubai logo.png" alt="فلاي دبي" class="w-full h-24 object-contain mx-auto">
+        <p class="mt-2 font-semibold text-gray-700 text-sm">فلاي دبي</p>
+      </div>
+
+      <div class="flex-shrink-0 w-44 bg-white rounded-2xl shadow p-4 transition-transform duration-300 hover:scale-105">
+        <img src="./img/qatar logo.jpg" alt="الخطوط القطرية" class="w-full h-24 object-contain mx-auto">
+        <p class="mt-2 font-semibold text-gray-700 text-sm">الخطوط القطرية</p>
+      </div>
+
+      <div class="flex-shrink-0 w-44 bg-white rounded-2xl shadow p-4 transition-transform duration-300 hover:scale-105">
+        <img src="./img/logo saudi.jpg" alt="الخطوط السعودية" class="w-full h-24 object-contain mx-auto">
+        <p class="mt-2 font-semibold text-gray-700 text-sm">الخطوط السعودية</p>
+      </div>
+
+      <div class="flex-shrink-0 w-44 bg-white rounded-2xl shadow p-4 transition-transform duration-300 hover:scale-105">
+        <img src="./img/emarat logo.jpg" alt="طيران الإمارات" class="w-full h-24 object-contain mx-auto">
+        <p class="mt-2 font-semibold text-gray-700 text-sm">طيران الإمارات</p>
+      </div>
+
+      <div class="flex-shrink-0 w-44 bg-white rounded-2xl shadow p-4 transition-transform duration-300 hover:scale-105">
+        <img src="./img/masr air.jpg" alt="مصر للطيران" class="w-full h-24 object-contain mx-auto">
+        <p class="mt-2 font-semibold text-gray-700 text-sm">مصر للطيران</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================================قسم الرحلات ================================================================-->
+<section class="trips" id="trips">
+  <div class="container">
+    <h2>رحلاتنا</h2>
+    <div class="line"></div>
+    <div class="trip-cards">
+      <div class="trip-card">
+        <img src="./img/paris.jpg" alt="رحلة 1">
+        <h3>رحلة إلى باريس</h3>
+        <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+
+      </div>
+      <div class="trip-card">
+        <img src="./img/imarat.jpg" alt="رحلة 2">
+        <h3>رحلة إلى دبي</h3>
+               <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+      <div class="trip-card">
+        <img src="./img/maldives.jpg" alt="رحلة 3">
+        <h3>رحلة إلى المالديف</h3>
+              <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+
+            <div class="trip-card">
+        <img src="./img/egypt.jpg" alt="رحلة 2">
+        <h3>رحلة إلى مصر</h3>
+               <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+
+            <div class="trip-card">
+        <img src="./img/makkajpg.jpg" alt="رحلة 2">
+        <h3>رحله إلى السعوديّه</h3>
+               <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+            <div class="trip-card">
+        <img src="./img/auropa.jpg" alt="رحلة 2">
+        <h3>رحله إلى إيطاليا</h3>
+               <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+            <div class="trip-card">
+        <img src="./img/almania.jpg" alt="رحلة 2">
+        <h3>رحله إلى المانيا</h3>
+               <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+            <div class="trip-card">
+        <img src="./img/qatar.jpg" alt="رحلة 2">
+        <h3>رحله إلى قطر</h3>
+               <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+            <div class="trip-card">
+        <img src="./img/madina.jpg" alt="رحلة 2">
+        <h3>رحله إلى المدينه المنوره</h3>
+               <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+            <div class="trip-card">
+        <img src="./img/korea.jpg" alt="رحلة 2">
+        <h3>رحله إلى كوريا</h3>
+              <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+
+            <div class="trip-card">
+        <img src="./img/uman.jpg" alt="رحلة 2">
+        <h3>رحله إلى عمان</h3>
+              <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+
+      <div class="trip-card">
+        <img src="./img/turky.jpg" alt="رحلة 2">
+        <h3>رحلة إلى تركيا</h3>
+              <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'">
+  احجز عبر واتساب
+</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= قسم الخدمات ==================================================== -->
+    
+
+  <section id="services" class="py-16 bg-gradient-to-br from-white to-gray-100">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+      <!-- كارد 1: تذاكر الطيران -->
+      <div class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 transition-transform transform hover:scale-105">
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mx-auto mb-6 text-3xl">
+          <i class="fas fa-plane-departure"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">حجز تذاكر الطيران</h3>
+        <p class="text-gray-600 text-base">استفد من أسعارنا الحصرية على تذاكر الطيران!</p>
+      </div>
+
+      <!-- كارد 2: العمرة -->
+      <div class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 transition-transform transform hover:scale-105">
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-600 mx-auto mb-6 text-3xl">
+          <i class="fas fa-kaaba"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">حجز برامج العمرة</h3>
+        <p class="text-gray-600 text-base">رحلات عمرة مميزة مع إقامة ونقل وخدمة متكاملة</p>
+      </div>
+
+      <!-- كارد 3: خدمات الزيارة -->
+      <div class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 transition-transform transform hover:scale-105">
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-green-100 text-green-600 mx-auto mb-6 text-3xl">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">خدمات الزيارة</h3>
+        <p class="text-gray-600 text-base">بدايه من تعبئه طلب إنجاز وتساهيل بأكثر إحترافيه</p>
+      </div>
+
+    </div>
+  </div>
+</section> 
+    
+
+
+    <!-- =====================================Special Offers Section=========================================== -->
+   
+    <section class="offers-section">
+        <div class="offer-card">
+            <h3 class="offer-title">عرض خاص!</h3>
+            <p class="offer-description">احصل على خصم 25% على جميع رحلاتنا العائلية هذا الصيف. العرض ساري حتى نهاية الشهر.</p>
+            
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">07</div>
+                    <div class="countdown-label">أيام</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">23</div>
+                    <div class="countdown-label">ساعات</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">59</div>
+                    <div class="countdown-label">دقائق</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">59</div>
+                    <div class="countdown-label">ثواني</div>
+                </div>
+            </div>
+            
+            <a href="https://wa.me/201108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم'" class="trip-btn"><button style="width: 200px; height: 65px; background-color: #D4AF37; border-radius: 10px; font-size: 20px; color: white;">احجز الآن واستفد من العرض</button></a>
+        </div>
+    </section>
+
+<!-- ================================================================================ -->
+    <!-- قسم آراء العملاء -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">آراء عملائنا</h2>
+                <div class="line w-24 h-1 bg-yellow-500 mx-auto my-4 md:w-36 lg:w-48"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">تعرف على تجارب عملائنا السابقين معنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- رأي 1 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4a76de8b-5c8d-41a9-bddf-be0d8b510602.png" alt="صورة شخصية لرجل أعمال أنيق يرتدي بدلة رسمية" class="w-12 h-12 rounded-full object-cover">
+                        <div class="mr-3">
+                            <h4 class="font-semibold text-gray-800">أحمد محمد</h4>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"تجربة رائعة مع شركة وجهات السفر، قاموا بتنظيم كل شيء بدقة متناهية وجعلوا رحلتي إلى اليابان لا تنسى."</p>
+                </div>
+                
+                <!-- رأي 2 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c1634802-b683-416e-b44a-8bec5cab6f85.png" alt="صورة شخصية لامرأة سعيدة ترتدي نظارة شمسية على الشاطئ" class="w-12 h-12 rounded-full object-cover">
+                        <div class="mr-3">
+                            <h4 class="font-semibold text-gray-800">سارة عبدالله</h4>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"شكراً لوجهات السفر على الإقامة الرائعة في المالديف، كل التفاصيل كانت مثالية وتم الاهتمام بكل طلباتي."</p>
+                </div>
+                
+                <!-- رأي 3 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c1dcf6a9-d9ce-4440-a8ba-2499055d7855.png" alt="صورة شخصية لرجل كبير السن يبتسم أمام معلم سياحي شهير" class="w-12 h-12 rounded-full object-cover">
+                        <div class="mr-3">
+                            <h4 class="font-semibold text-gray-800">علي إبراهيم</h4>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"كنت متردداً في البداية لكن الشركة وفرت لي كل ما أحتاجه في رحلتي إلى تركيا وكانت الأسعار مناسبة جداً."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- ========================================== -->
+      <!-- قسم الأسئلة الشائعة -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">الأسئلة الشائعة</h2>
+                <div class="line w-24 h-1 bg-yellow-500 mx-auto my-4 md:w-36 lg:w-48"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">إجابات على أكثر الأسئلة التي تهم عملائنا</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- سؤال 1 -->
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">كيف يمكنني حجز رحلة سياحية معكم؟</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">يمكنك حجز رحلتك السياحية بسهولة من خلال الاتصال بنا على الأرقام المخصصة للاستفسارات أو عن طريق ملء نموذج الحجز على موقعنا الإلكتروني. كما يمكنك زيارتنا في مقر الشركة لتنظيم كل تفاصيل رحلتك.</p>
+                    </div>
+                </div>
+                
+                <!-- سؤال 2 -->
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">ما هي وسائل الدفع المتاحة؟</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">نقبل جميع وسائل الدفع المتاحة بما في ذلك الدفع نقداً، وبطاقات الائتمان والخصم (فيزا، ماستركارد، أمريكان إكسبريس)، بالإضافة إلى التحويلات البنكية. كما نقدم خيارات الدفع بالتقسيط لبعض البرامج السياحية المحددة.</p>
+                    </div>
+                </div>
+                
+                <!-- سؤال 3 -->
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">هل تقدمون تأميناً سفراً لرحلاتكم؟</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">نعم، نقدم تأمين سفر شامل من خلال شركات تأمين موثوقة تغطي النفقات الطبية الطارئة، وتأخير أو إلغاء الرحلة، وفقدان الأمتعة، وغيرها من المخاطر التي قد تواجه المسافر. يمكنك اختيار باقة التأمين المناسبة لك عند حجز رحلتك.</p>
+                    </div>
+                </div>
+                
+                <!-- سؤال 4 -->
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">ماذا يحدث إذا أردت إلغاء رحلتي؟</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">في حال رغبتك في إلغاء الرحلة، يمكنك الاتصال بنا مباشرة وسنقوم بإعلامك بشروط الإلغاء ورسومه وفقاً لسياسة الإلغاء الخاصة بالخدمة التي قمت بحجزها. ننصح دائماً بقراءة شروط الإلغاء قبل الحجز.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- =============================================================================================== -->
+ <!-- Business Card Section -->
+    <section class="business-card-section">
+        <div class="section-header">
+            <h2 class="section-title" style="margin-bottom: 0px;">بطاقة العمل</h2>
+            <div class="line w-24 h-1 bg-yellow-500 mx-auto my-4 md:w-36 lg:w-48" ></div>
+        </div>
+        
+        <div class="business-card">
+            <div class="card-header">
+                <div class="card-logo">م</div>
+                <h2 class="card-company">مكِّـــيون</h2>
+                <p class="card-slogan">رحلات لا تنسى حول العالم</p>
+            </div>
+            <div class="card-body">
+                <div class="card-contact">
+                    <i class="fas fa-phone"></i><i class="fab fa-whatsapp"></i> 
+                    <a href="https://wa.me/01108790938?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم">01108790938</a>  
+                </div>
+
+                <div class="card-contact">
+                    <i class="fab fa-whatsapp"></i> 
+                    <a href="https://wa.me/966580879152?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم">966580879152+</a>
+                </div>
+
+                <div class="card-contact">
+                    <i class="fas fa-envelope"></i>
+                    <a href="https://mail.google.com/mail/?view=cm&to=makkiyoon25@gmail.com" target="_blank">makkiyoon25@gmail.com</a>
+
+                </div>
+                <div class="card-contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                   <a href="https://www.google.com/maps/dir/%D8%B3%D9%85%D9%86%D9%88%D8%AF%D8%8C+%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%B3%D9%85%D9%86%D9%88%D8%AF%D8%8C+%D8%B3%D9%85%D9%86%D9%88%D8%AF%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+6783504%E2%80%AD/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D9%83%D9%8A%D9%88%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9%D8%8C+X68R%2B6XW%D8%8C+%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%B3%D9%85%D9%86%D9%88%D8%AF%D8%8C+%D8%B3%D9%85%D9%86%D9%88%D8%AF%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+6786212%E2%80%AD/data=!4m8!4m7!1m2!1m1!1s0x14f7a2eaad480117:0x283ca478d01a11ff!1m2!1m1!1s0x14f7a3005c18eb2f:0x9fbc2e439ea64213!3e0?sa=X&ved=1t:2040&ictx=111" target="_blank">محافظه الغربيه . سمنود</a>
+                </div>
+                
+                <div class="card-social">
+                    <a href="https://www.facebook.com/share/16GBguQJvX/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://t.me/makkiyoon25"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/966580879152?text=مرحباً%20أريد%20الاستفسار%20عن%20خدماتكم"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- =============================================================================================== -->
+ <script src="./JS/main.js"></script>
